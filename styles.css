@@ -4,6 +4,12 @@
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
+    
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+        }
+    }
 
     body {
       background: #0f172a;
@@ -17,8 +23,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255,255,255,0.05);
-      backdrop-filter: blur(10px);
+      background: red;
       position: sticky;
       top: 0;
     }
@@ -71,7 +76,7 @@
       padding: 15px 30px;
       border: none;
       border-radius: 12px;
-      background: #3b82f6;
+      background: red;
       color: white;
       font-size: 16px;
       cursor: pointer;
@@ -79,7 +84,7 @@
     }
 
     .button:hover {
-      background: #2563eb;
+      background: white;
       transform: translateY(-2px);
     }
 
