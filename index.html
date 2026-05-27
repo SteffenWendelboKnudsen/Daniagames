@@ -105,30 +105,187 @@
   <section class="dream-job">
 
     <h2>Find dit <span>Drømmejob</span></h2>
-
     <p>Her er nogle af de karriereveje du kan gå.</p>
 
     <div class="job-container">
 
-    <button onclick="previous()"class="button">⬅</button>
+        <button onclick="previous()" class="button">⬅</button>
 
-    <div class="job-card">
-      <h3>Datamatiker</h3>
+        <div class="job-card active">
+            <h3>Datamatiker</h3>
 
-      <ul>
-        <li>Spiludvikler</li>
-        <li>Softwareudvikler</li>
-        <li>Programmør</li>
-        <li>Appudvikler</li>
-        <li>Full Stack Developer</li>
-        <li>Iværksætter</li>
-      </ul>
-      </div>
-      
-      <button onclick="next()" class="button">➡</button>
+            <ul>
+                <li>Spiludvikler</li>
+                <li>Softwareudvikler</li>
+                <li>Programmør</li>
+                <li>Appudvikler</li>
+                <li>Full Stack Developer</li>
+                <li>Iværksætter</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <h3>Multimediedesigner</h3>
+
+            <ul>
+                <li>Webdesigner</li>
+                <li>UX/UI Designer</li>
+                <li>Frontend Designer</li>
+                <li>Digital Designer</li>
+                <li>Content Creator</li>
+                <li>Video- og animationsmedarbejder</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <h3>Softwareudvikler</h3>
+
+            <ul>
+                <li>Webudvikler</li>
+                <li>Softwareudvikler</li>
+                <li>Cloud Developer</li>
+                <li>Appudvikler</li>
+                <li>IT-konsulent</li>
+            </ul>
+        </div>
+
+        <button onclick="next()" class="button">➡</button>
+
     </div>
+</section>
 
+  <section class="requirements">
+
+    <h2>Adgangskrav og <span>optagelse</span></h2>
+    <br>
+
+    <div class="requirements-container">
+
+      <details class="details1">
+        <summary class="summary1">Adgangskrav</summary>
+
+        <div class="requirements-content">
+          <h4></h4>
+
+          <p>
+            Datamatikeruddannelsen fokuserer på programmering,
+            systemudvikling og softwareteknologi.
+          </p>
+
+          <h4>Ansøgningsfrist</h4>
+
+          <ul>
+            <li>Softwareudvikler</li>
+            <li>Appudvikler</li>
+            <li>Frontend Developer</li>
+            <li>Backend Developer</li>
+            <li>Programmør</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="details1">
+        <summary class="summary1">Ansøgningsfrist</summary>
+
+        <div class="requirements-content">
+          <h4>Om uddannelsen</h4>
+
+          <p>
+            Multimediedesign handler om grafisk design,
+            UX/UI, branding og digital kommunikation.
+          </p>
+
+          <h4>Jobmuligheder</h4>
+
+          <ul>
+            <li>UI Designer</li>
+            <li>UX Designer</li>
+            <li>Grafisk Designer</li>
+            <li>Content Creator</li>
+            <li>Frontend Designer</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="details1">
+        <summary class="summary1">Søg om optagelse</summary>
+
+        <div class="requirements-content">
+          <h4>Om uddannelsen</h4>
+
+          <p>
+            Softwareudvikling bygger videre på programmering,
+            databaser og avancerede systemer.
+          </p>
+
+          <h4>Jobmuligheder</h4>
+
+          <ul>
+            <li>Full Stack Developer</li>
+            <li>Systemarkitekt</li>
+            <li>Backend Developer</li>
+            <li>Cloud Developer</li>
+            <li>DevOps Engineer</li>
+          </ul>
+        </div>
+    </div>
+      </details>
   </section>
 
+  <section class="student-projects">
+    <h2>Studenter<br>projekter</h2>
+    <br>
+    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige projekter.</p>
+    <br>
+
+    <div class="video">
+      <button onclick="previous()"class="button">⬅</button>
+
+      <video width="250" height="200" controls>    /* mangler video på computeren, indsættes når jeg har \*
+      <source src="" type="">
+      </video>
+
+      <button onclick="next()" class="button">➡</button>
+    </div>
+    </section>
+
+    <script>
+      const cards = document.querySelectorAll(".job-card");
+
+      let currentCard = 0;
+
+      showCard(currentCard);
+
+      function showCard(index) {
+
+      cards.forEach(card => {
+          card.classList.remove("active");
+    });
+
+      cards[index].classList.add("active");
+}
+
+      function next() {
+
+        currentCard++;
+
+        if (currentCard >= cards.length) {
+           currentCard = 0;
+    }
+
+        showCard(currentCard);
+}
+
+      function previous() {
+
+        currentCard--;
+
+        if (currentCard < 0) {
+           currentCard = cards.length - 1;
+    }
+
+        showCard(currentCard);
+}
+</script>
 </body>
 </html>

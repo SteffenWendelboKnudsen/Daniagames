@@ -12,7 +12,7 @@
 
     .hero{
       height:100vh;
-      background:url("hero-image.jpg") center/cover no-repeat;
+      background:url("") center/cover no-repeat;
       position:relative;
       display:flex;
       align-items:center;
@@ -139,14 +139,28 @@
       padding-left:20px;
     }
 
+    .job-card {
+      display: none;
+      width: 300px;
+      min-height: 350px;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .job-card.active {
+      display: block;
+    }
+
     .dream-job{
-      background:#f5f5f5;
-      padding:60px 20px;
-      text-align:center;
+        background:#f5f5f5;
+        padding:60px 20px;
+        text-align:center;
     }
 
     .dream-job h2{
-      font-size:2.3rem;
+      font-size: 2.5rem;
       text-transform:uppercase;
       font-weight:900;
       margin-bottom:15px;
@@ -166,19 +180,10 @@
       gap: 20px;
     }
 
-    .job-card{
-      background:white;
-      border-radius:12px;
-      padding:25px;
-      max-width:320px;
-      margin: 0 auto;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    }
-
     .job-card h3{
       color:#d7193f;
       margin-bottom:15px;
-      font-size:2rem;
+      font-size:1.3rem;
     }
 
     .job-card ul{
@@ -201,6 +206,93 @@
     display: none;
   }
 }
+
+    .details1 {
+      background:#d7193f;
+      color:#222;
+      border-radius:6px;
+      overflow:hidden;
+    }
+
+    .summary1 {
+      color: white;
+    }
+
+    .requirements{
+      background:#f5f5f5;
+      color:#d7193f;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .requirements h2{
+      font-size:2.5rem;
+      line-height:1;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      font-weight:900;
+    }
+
+    .requirements p{
+      margin-bottom:30px;
+      font-size:1rem;
+    }
+
+  .requirements-container {
+      display:flex;
+      color: white;
+      flex-direction:column;
+      gap:15px;
+      max-width:320px;
+      margin:0 auto;
+    }
+
+  .requirements-content{
+      padding:0 15px 15px;
+      color: white;
+      text-align:left;
+      line-height:1.6;
+      border-top:1px solid #ddd;
+    }
+
+  .requirements-content h4{
+      margin-top:15px;
+      margin-bottom:8px;
+      color: white;
+    }
+
+  .requirements-content ul{
+      padding-left:20px;
+    }
+
+  .student-projects {
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    background:#f5f5f5;
+    align-items: center;
+  }
+
+  .student-projects h2{
+      font-size:2.3rem;
+      color: #d7193f;
+      text-transform:uppercase;
+      font-weight:900;
+      margin-bottom:15px;
+    }
+
+    .student-projects p{
+      margin-bottom:30px;
+      font-size:1rem;
+      align-content: center;
+    }
+
+    .video {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 15px;
+  }
 
     /* MOBILE FIRST */
     @media(min-width:768px){
