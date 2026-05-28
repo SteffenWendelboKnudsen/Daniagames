@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css">
+  <script src="slideshow.js"></script>
   <title>Dania Games</title>
-  </head>
+</head>
+
 <body>
 
   <section class="hero">
@@ -107,54 +110,54 @@
     <h2>Find dit <span>Drømmejob</span></h2>
     <p>Her er nogle af de karriereveje du kan gå.</p>
 
-    <div class="job-container">
+    <div class="job-slideshow-container">
 
-        <button onclick="previous()" class="button">⬅</button>
+      <button class="button button-left">⬅</button>
 
-    <div class="job-card">
-      <h3>Multimediedesign</h3>
+      <div class="slideshow-card">
+        <h3>Multimediedesign</h3>
 
-      <ul>
-        <li>Webdesigner</li>
-        <li>Spildesigner</li>
-        <li>UX/UI-designer</li>
-        <li>Appudvikler</li>
-        <li>Social Media Manager</li>
-        <li>Iværksætter</li>
-		<li>Leveldesigner</li>
-		<li>Freelancer</li>
-		<li>Content Marketing Manager</li>
-      </ul>
+        <ul>
+          <li>Webdesigner</li>
+          <li>Spildesigner</li>
+          <li>UX/UI-designer</li>
+          <li>Appudvikler</li>
+          <li>Social Media Manager</li>
+          <li>Iværksætter</li>
+          <li>Leveldesigner</li>
+          <li>Freelancer</li>
+          <li>Content Marketing Manager</li>
+        </ul>
       </div>
-		
-	<div class="job-card">
-      <h3>Datamatiker</h3>
 
-      <ul>
-        <li>Spiludvikler</li>
-        <li>Softwareudvikler</li>
-        <li>Programmør</li>
-        <li>Appudvikler</li>
-        <li>Full Stack Developer</li>
-        <li>Iværksætter</li>
-      </ul>
-      </div>
-		
-	<div class="job-card">
-      <h3>Softwareudvikling</h3>
+      <div class="slideshow-card">
+        <h3>Datamatiker</h3>
 
-      <ul>
-        <li>Systemudvikler</li>
-        <li>Tester</li>
-        <li>Programmør</li>
-        <li>Applikationsarkitekt</li>
-      </ul>
+        <ul>
+          <li>Spiludvikler</li>
+          <li>Softwareudvikler</li>
+          <li>Programmør</li>
+          <li>Appudvikler</li>
+          <li>Full Stack Developer</li>
+          <li>Iværksætter</li>
+        </ul>
       </div>
-	
-      
-      <button onclick="next()" class="button">➡</button>
+
+      <div class="slideshow-card">
+        <h3>Softwareudvikling</h3>
+
+        <ul>
+          <li>Systemudvikler</li>
+          <li>Tester</li>
+          <li>Programmør</li>
+          <li>Applikationsarkitekt</li>
+        </ul>
+      </div>
+
+
+      <button class="button button-right">➡</button>
     </div>
-</section>
+  </section>
 
   <section class="requirements">
 
@@ -231,85 +234,92 @@
           </ul>
         </div>
     </div>
-      </details>
+    </details>
   </section>
 
   <section class="student-projects">
     <h2>Studenter<br>projekter</h2>
     <br>
-    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige projekter.</p>
+    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige
+      projekter.</p>
     <br>
 
-    <div class="video">
-      <button onclick="previous()"class="button">⬅</button>
+    <div class="student-slideshow-container">
+      <button class="button button-left">⬅</button>
 
-      <video width="250" height="200" controls>    /* mangler video på computeren, indsættes når jeg har \*
-      <source src="" type="">
+      <video width="250" height="200" controls> /* mangler video på computeren, indsættes når jeg har \*
+        <source src="" type="">
       </video>
 
-      <button onclick="next()" class="button">➡</button>
+      <button class="button button-right">➡</button>
     </div>
-    </section>
-    
-    <section class="study-environment">
+    </div>
+  </section>
+
+  <section class="study-environment">
     <h2>Studiemiljø</h2>
     <br>
-    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige projekter.</p>
+    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige
+      projekter.</p>
 
     <div class="video2">
-      <video width="250" height="200" controls>    /* mangler video på computeren, indsættes når jeg har \*
-      <source src="" type="">
+      <video width="250" height="200" controls> /* mangler video på computeren, indsættes når jeg har \*
+        <source src="" type="">
       </video>
     </div>
-    </section>
+  </section>
 
-    <section class="journey">
+  <section class="journey">
     <h2>Start din<br> rejse nu</h2>
     <br>
-    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige projekter.</p>
+    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige
+      projekter.</p>
 
     <div>
-     
+
     </div>
-    </section>
+  </section>
 
-    <script>
-      const cards = document.querySelectorAll(".job-card");
+  <script>
+    new SlideShow(".job-slideshow-container")
+    new SlideShow(".student-slideshow-container")
+    // const cards = document.querySelectorAll(".job-card");
 
-      let currentCard = 0;
+    // let currentCard = 0;
 
-      showCard(currentCard);
+    // showCard(currentCard);
 
-      function showCard(index) {
+    // function showCard(index) {
 
-      cards.forEach(card => {
-          card.classList.remove("active");
-    });
+    //   cards.forEach(card => {
+    //     card.classList.remove("active");
+    //   });
 
-      cards[index].classList.add("active");
-      }
+    //   cards[index].classList.add("active");
+    // }
 
-      function next() {
+    // function next() {
 
-        currentCard++;
+    //   currentCard++;
 
-        if (currentCard >= cards.length) {
-           currentCard = 0;
-      }
+    //   if (currentCard >= cards.length) {
+    //     currentCard = 0;
+    //   }
 
-        showCard(currentCard);
-      }
+    //   showCard(currentCard);
+    // }
 
-      function previous() {
+    // function previous() {
 
-        currentCard--;
+    //   currentCard--;
 
-        if (currentCard < 0) {
-           currentCard = cards.length - 1;
-      }
+    //   if (currentCard < 0) {
+    //     currentCard = cards.length - 1;
+    //   }
 
-        showCard(currentCard);
-      }
-</script>
+    //   showCard(currentCard);
+    // }
+  </script>
 </body>
+
 </html>
