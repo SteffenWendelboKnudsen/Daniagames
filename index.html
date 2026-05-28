@@ -250,6 +250,28 @@
       <button onclick="next()" class="button">➡</button>
     </div>
     </section>
+    
+    <section class="study-environment">
+    <h2>Studiemiljø</h2>
+    <br>
+    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige projekter.</p>
+
+    <div class="video2">
+      <video width="250" height="200" controls>    /* mangler video på computeren, indsættes når jeg har \*
+      <source src="" type="">
+      </video>
+    </div>
+    </section>
+
+    <section class="journey">
+    <h2>Start din<br> rejse nu</h2>
+    <br>
+    <p>På DaniaGames i Grenaa arbejdes der kreativt med både video, hjemmesider og visuelle designs gennem forskellige projekter.</p>
+
+    <div>
+     
+    </div>
+    </section>
 
     <script>
       const cards = document.querySelectorAll(".job-card");
@@ -265,7 +287,7 @@
     });
 
       cards[index].classList.add("active");
-}
+      }
 
       function next() {
 
@@ -273,10 +295,10 @@
 
         if (currentCard >= cards.length) {
            currentCard = 0;
-    }
+      }
 
         showCard(currentCard);
-}
+      }
 
       function previous() {
 
@@ -284,10 +306,10 @@
 
         if (currentCard < 0) {
            currentCard = cards.length - 1;
-    }
+      }
 
         showCard(currentCard);
-}
+      }
 </script>
 </body>
 </html>
