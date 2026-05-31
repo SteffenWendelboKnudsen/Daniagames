@@ -394,7 +394,8 @@
         font-size: 4rem;
       }
 
-      .dropdown-container, .requirements-container {
+      .dropdown-container,
+      .requirements-container {
         max-width: 600px;
       }
 
@@ -411,7 +412,7 @@
       }
 
       .job-slideshow-container {
-      gap: 64px;
+        gap: 64px;
       }
 
       .student-slideshow-container {
@@ -426,8 +427,8 @@
     }
 
     @media(min-width:1280px) {
-    
-    .container {
+
+      .container {
         max-width: 1920px;
         padding-block: 64px;
         padding-inline: 256px;
@@ -438,3 +439,5 @@
       }
 
     }
+
+    llllol
