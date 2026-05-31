@@ -39,6 +39,7 @@ list-style-type: none;
       src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
     }
 
+
     body {
       background: #ffffff;
       color: #222;
@@ -166,6 +167,7 @@ list-style-type: none;
       color: #393D3F;
       border-radius: 6px;
       overflow: hidden;
+      width: 600px;
     }
 
     summary {
@@ -185,6 +187,7 @@ list-style-type: none;
       transform: translateY(-50%);
       font-size: 24px;
     }
+
 
     details[open] summary::after {
       content: "−";
@@ -227,20 +230,18 @@ list-style-type: none;
       text-align: center;
       display: flex;
       flex-direction: column;
+      padding: 60px 20px;
     }
 
     .dream-job h2 {
       font-size: 2.5rem;
       text-transform: uppercase;
       font-weight: 900;
-    }
-
-    .dream-job span {
-      color: #d7193f;
+      font-family: Nasalization;
     }
 
     .dream-job p {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     .job-slideshow-container {
@@ -252,7 +253,19 @@ list-style-type: none;
 
     .slideshow-card h3 {
       color: #d7193f;
-      font-size: 1.3rem;
+      font-size: 24px;
+      padding-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .slideshow-txt 
+    {
+      text-align: left;
+    }
+
+    .slideshow-bold {
+      font-weight: bold;
+      text-align: left;
     }
 
     .slideshow-card ul {
@@ -283,7 +296,7 @@ list-style-type: none;
 
     .requirements {
       background: #f5f5f5;
-      color: #d7193f;
+      color: #393D3F
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -294,6 +307,12 @@ list-style-type: none;
       line-height: 1;
       text-transform: uppercase;
       font-weight: 900;
+      font-family: Nasalization;
+    }
+
+    .requirements h4 
+    {
+      font-size: 20px;
     }
 
     .requirements p {
@@ -339,6 +358,7 @@ list-style-type: none;
       color: #d7193f;
       text-transform: uppercase;
       font-weight: 900;
+      font-family: Nasalization;
     }
 
     .student-projects p {
@@ -372,6 +392,7 @@ list-style-type: none;
       color: white;
       text-transform: uppercase;
       font-weight: 900;
+      font-family: Nasalization;
     }
 
     .study-environment p {
