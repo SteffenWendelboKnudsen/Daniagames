@@ -10,6 +10,7 @@
       src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
     }
 
+
     body {
       background: #ffffff;
       color: #222;
@@ -137,6 +138,7 @@
       color: #393D3F;
       border-radius: 6px;
       overflow: hidden;
+      width: 600px;
     }
 
     summary {
