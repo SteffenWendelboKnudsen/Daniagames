@@ -5,10 +5,10 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-   @font-face {
-   font-family: Nasalization;
-   src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
-  }
+    @font-face {
+    font-family: Nasalization;
+    src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
+    }
 
     body {
       background: #ffffff;
