@@ -5,6 +5,35 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+/* Top navigation bar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CD1F35;
+}
+
+/* Navigation bar links */
+.navbar ul li {
+	float: left;
+}
+
+.navbar a {
+	display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #F2C9CB;
+  color: black;
+}
+
+
     @font-face {
       font-family: Nasalization;
       src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
