@@ -2,47 +2,45 @@
 class SlideShow {
     constructor(containerclass) {
         this.container = document.querySelector(containerclass);
-        this.cards = document.querySelectorAll(`${containerclass} .slideshow-card`);
+        this.items = document.querySelectorAll(`${containerclass} .slideshow-item`);
         this.leftButton = document.querySelector(`${containerclass} .button-left`);
         this.rightButton = document.querySelector(`${containerclass} .button-right`);
-        this.currentCard = 0;
-        console.log(this.cards)
-        console.log(this.leftButton)
-        console.log(this.rightButton)
-        this.showCard(this.currentCard);
+        this.currentItem = 0;
+
+        this.showItem(this.currentItem);
         this.leftButton.addEventListener("click", () => this.previous())
         this.rightButton.addEventListener("click", () => this.next())
     }
 
-    showCard(index) {
-        console.log(this.cards)
-        this.cards.forEach(card => {
-            card.classList.remove("active");
+    showItem(index) {
+
+        this.items.forEach(item => {
+            item.classList.remove("active");
         });
 
-        this.cards[index].classList.add("active");
+        this.items[index].classList.add("active");
     }
 
     next() {
 
-        this.currentCard++;
+        this.currentItem++;
 
-        if (this.currentCard >= this.cards.length) {
-            this.currentCard = 0;
+        if (this.currentItem >= this.items.length) {
+            this.currentItem = 0;
         }
 
-        this.showCard(this.currentCard);
+        this.showItem(this.currentItem);
     }
 
     previous() {
 
-        this.currentCard--;
+        this.currentItem--;
 
-        if (this.currentCard < 0) {
-            this.currentCard = this.cards.length - 1;
+        if (this.currentItem < 0) {
+            this.currentItem = this.items.length - 1;
         }
 
-        this.showCard(this.currentCard);
+        this.showItem(this.currentItem);
     }
 }
 
