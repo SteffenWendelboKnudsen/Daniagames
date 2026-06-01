@@ -5,58 +5,57 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-
     @font-face {
       font-family: Nasalization;
       src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
     }
-
 
     body {
       background: #ffffff;
       color: #222;
     }
 
-.top-bar {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	background-color: #CD1F35;
-	height: 128px;
-	padding: 0px;
-}
+    .top-bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #CD1F35;
+      height: 128px;
+      padding: 0px;
+      overflow: hidden;
+    }
 
-.menu {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	list-style-type: none;
-	
-}
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style-type: none;
 
-.menu li a {
-	margin:30px;
-	justify-content: right;
-	text-decoration: none;
-	color: white;
-	margin: 16px;
-	padding: 16px;
-	background-color: #CD1F35;
-}
+    }
 
-.logo {
-	width: 128px;
-	margin: 0px;
-	
-}
+    .menu li a {
+      margin: 30px;
+      justify-content: right;
+      text-decoration: none;
+      color: white;
+      margin: 16px;
+      padding: 16px;
+      background-color: #CD1F35;
+    }
 
-.top-bar ul li a:hover {
-	background-color: #F2C9CB;
-	color: black;
-	border-radius: 8px;
-	
-}
+    .logo {
+      width: 128px;
+      margin: 0px;
+
+    }
+
+    .top-bar ul li a:hover {
+      background-color: #F2C9CB;
+      color: black;
+      border-radius: 8px;
+
+    }
 
 
 
@@ -102,14 +101,7 @@
       position: relative;
       z-index: 2;
       color: white;
-<<<<<<< HEAD
       max-width: 1440px;
-=======
-<<<<<<< HEAD
-=======
-      max-width: 1440px;
->>>>>>> Victor-Branch
->>>>>>> origin/Tobias
     }
 
     .hero h1 {
@@ -280,8 +272,7 @@
       font-weight: bold;
     }
 
-    .slideshow-txt 
-    {
+    .slideshow-txt {
       text-align: left;
     }
 
@@ -318,7 +309,7 @@
 
     .requirements {
       background: #f5f5f5;
-      color: #393D3F
+      color: #393D3F;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -332,8 +323,7 @@
       font-family: Nasalization;
     }
 
-    .requirements h4 
-    {
+    .requirements h4 {
       font-size: 20px;
     }
 
@@ -475,6 +465,13 @@
 
     /* Desktop/tablet styling */
     @media(min-width:768px) {
+
+      .top-bar {
+        position: sticky;
+        z-index: 1000;
+        max-width: 100%;
+        top: 0;
+      }
 
       .container {
         padding-block: 64px;
