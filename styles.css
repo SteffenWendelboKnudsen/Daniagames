@@ -100,7 +100,14 @@
       position: relative;
       z-index: 2;
       color: white;
+<<<<<<< HEAD
       max-width: 1440px;
+=======
+<<<<<<< HEAD
+=======
+      max-width: 1440px;
+>>>>>>> Victor-Branch
+>>>>>>> origin/Tobias
     }
 
     .hero h1 {
