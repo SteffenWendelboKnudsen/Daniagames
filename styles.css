@@ -5,6 +5,13 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+
+    @font-face {
+      font-family: Nasalization;
+      src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
+    }
+
+
     body {
       background: #ffffff;
       color: #222;
@@ -14,10 +21,10 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #CD1F35;
 	height: 128px;
-	padding: 8px;
+	padding: 0px;
 }
 
 .menu {
@@ -29,17 +36,27 @@
 }
 
 .menu li a {
-	margin:8px;
+	margin:30px;
+	justify-content: right;
 	text-decoration: none;
 	color: white;
+	margin: 16px;
+	padding: 16px;
+	background-color: #CD1F35;
 }
 
 .logo {
 	width: 128px;
-	margin: 16px;
-	float: left;
+	margin: 0px;
+	
 }
 
+.top-bar ul li a:hover {
+	background-color: #F2C9CB;
+	color: black;
+	border-radius: 8px;
+	
+}
 
     .container {
       padding-block: 32px;
@@ -83,24 +100,30 @@
       position: relative;
       z-index: 2;
       color: white;
+<<<<<<< HEAD
+=======
+      max-width: 1440px;
+>>>>>>> Victor-Branch
     }
 
     .hero h1 {
-      font-size: 2.2rem;
-      font-weight: 900;
+      font-size: 64px;
       line-height: 1.1;
       text-transform: uppercase;
+      margin-bottom: 8px;
+      font-family: Nasalization;
     }
 
     .hero p {
-      font-size: 1.1rem;
+      font-size: 24px;
       line-height: 1.4;
+      margin-bottom: 16px;
     }
 
     .hero-btn {
       display: inline-block;
-      background: #d7193f;
-      color: white;
+      background: #C9C314;
+      color: #F5F5F5;
       padding: 14px 28px;
       border-radius: 40px;
       text-decoration: none;
@@ -110,24 +133,41 @@
     }
 
     .hero-btn:hover {
-      background: #b81334;
+      background: #CECC7F;
+      color: #989A9A;
     }
 
     .education {
-      background: #d7193f;
-      color: white;
+      background: #CD1F35;
+      color: #F5F5F5;
+      padding: 60px 20px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
     .education h2 {
-      font-size: 2.5rem;
+      font-size: 40px;
       line-height: 1;
       text-transform: uppercase;
-      font-weight: 900;
+      margin-bottom: 10px;
+      font-family: Nasalization;
     }
 
     .education p {
-      font-size: 1rem;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .education-btn {
+      font-size: 16px;
+      color: #CD1F35;
+      font-weight: bolder;
+    }
+
+    .education-btn:hover {
+      font-weight: bold;
+      color: #989A9A;
     }
 
     .dropdown-container {
@@ -139,17 +179,18 @@
     }
 
     details {
-      background: white;
-      color: #222;
+      background: #F5F5F5;
+      color: #393D3F;
       border-radius: 6px;
       overflow: hidden;
+      width: 600px;
     }
 
     summary {
       list-style: none;
-      padding: 15px;
+      padding: 16px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 24px;
       font-weight: bold;
       position: relative;
     }
@@ -157,11 +198,12 @@
     summary::after {
       content: "+";
       position: absolute;
-      right: 15px;
+      right: 16px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 1.2rem;
+      font-size: 24px;
     }
+
 
     details[open] summary::after {
       content: "−";
@@ -202,20 +244,20 @@
     .dream-job {
       background: #f5f5f5;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 20px;
     }
 
     .dream-job h2 {
       font-size: 2.5rem;
       text-transform: uppercase;
       font-weight: 900;
-    }
-
-    .dream-job span {
-      color: #d7193f;
+      font-family: Nasalization;
     }
 
     .dream-job p {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     .job-slideshow-container {
@@ -227,7 +269,19 @@
 
     .slideshow-card h3 {
       color: #d7193f;
-      font-size: 1.3rem;
+      font-size: 24px;
+      padding-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .slideshow-txt 
+    {
+      text-align: left;
+    }
+
+    .slideshow-bold {
+      font-weight: bold;
+      text-align: left;
     }
 
     .slideshow-card ul {
@@ -258,15 +312,23 @@
 
     .requirements {
       background: #f5f5f5;
-      color: #d7193f;
+      color: #393D3F
       text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
     .requirements h2 {
-      font-size: 2.4rem;
+      font-size: 40px;
       line-height: 1;
       text-transform: uppercase;
       font-weight: 900;
+      font-family: Nasalization;
+    }
+
+    .requirements h4 
+    {
+      font-size: 20px;
     }
 
     .requirements p {
@@ -308,10 +370,11 @@
     }
 
     .student-projects h2 {
-      font-size: 2.3rem;
+      font-size: 40px;
       color: #d7193f;
       text-transform: uppercase;
       font-weight: 900;
+      font-family: Nasalization;
     }
 
     .student-projects p {
@@ -341,10 +404,11 @@
     }
 
     .study-environment h2 {
-      font-size: 2.3rem;
+      font-size: 40px;
       color: white;
       text-transform: uppercase;
       font-weight: 900;
+      font-family: Nasalization;
     }
 
     .study-environment p {
@@ -370,7 +434,7 @@
     }
 
     .journey h2 {
-      font-size: 2.3rem;
+      font-size: 40px;
       color: #d7193f;
       text-transform: uppercase;
       font-weight: 900;
@@ -412,16 +476,16 @@
       }
 
       .hero h1 {
-        font-size: 4rem;
+        font-size: 64px;
       }
 
       .hero p {
-        font-size: 1.3rem;
+        font-size: 24px;
       }
 
       .education h2,
       .dream-job h2 {
-        font-size: 4rem;
+        font-size: 40px;
       }
 
       .dropdown-container,
