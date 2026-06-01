@@ -17,21 +17,17 @@
 
     .top-bar {
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: space-between;
       background-color: #CD1F35;
       height: 128px;
-      padding: 0px;
       overflow: hidden;
     }
 
     .menu {
       display: flex;
-      flex-direction: row;
       align-items: center;
       list-style-type: none;
-
     }
 
     .menu li a {
@@ -179,7 +175,7 @@
       color: #393D3F;
       border-radius: 6px;
       overflow: hidden;
-      width: 600px;
+      width: 320px;
     }
 
     summary {
@@ -260,7 +256,6 @@
       display: flex;
       align-content: center;
       justify-content: center;
-      gap: 20px;
     }
 
     .slideshow-card h3 {
