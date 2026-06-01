@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #CD1F35;
+	height: 128px;
+	padding: 0px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	list-style-type: none;
+	
+}
+
+.menu li a {
+	margin:30px;
+	justify-content: right;
+	text-decoration: none;
+	color: white;
+	margin: 16px;
+	padding: 16px;
+	background-color: #CD1F35;
+}
+
+.logo {
+	width: 128px;
+	margin: 0px;
+	
+}
+
+.top-bar ul li a:hover {
+	background-color: #F2C9CB;
+	color: black;
+	border-radius: 8px;
+	
+}
