@@ -21,10 +21,10 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	background-color: #CD1F35;
 	height: 128px;
-	padding: 8px;
+	padding: 0px;
 }
 
 .menu {
@@ -36,17 +36,24 @@
 }
 
 .menu li a {
-	margin:8px;
+	margin:30px;
+	justify-content: flex-end;
 	text-decoration: none;
 	color: white;
 }
 
 .logo {
 	width: 128px;
-	margin: 16px;
-	float: left;
+	margin: 0px;
+	
 }
 
+.top-bar ul li a:hover {
+	background-color: #F2C9CB;
+	color: black;
+	margin: 20px;
+	padding: 20px;
+}
 
     .container {
       padding-block: 32px;
