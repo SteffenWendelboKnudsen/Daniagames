@@ -7,7 +7,7 @@
 
     @font-face {
       font-family: Nasalization;
-      src: url("Font/Nasalization.ttf") format("truetype");
+      src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
     }
 
     body {
@@ -15,90 +15,57 @@
       color: #222;
     }
 
-    #topBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      border: none;
-      background: #000;
-      color: #fff;
-      padding: 8px 12px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 12px;
-    }
-
-    #topBtn:hover {
-      background: #333;
-    }
-
     .top-bar {
       display: flex;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      background-color: #cb142a;
+      justify-content: space-between;
+      background-color: #CD1F35;
       height: 128px;
+      padding: 0px;
       overflow: hidden;
     }
 
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     .menu {
-      display: none;
-    }
-
-    .menu.active {
       display: flex;
-      flex-direction: column;
-      width: 100svw;
-      position: absolute;
-      top: 128px;
-      background-color: white;
-      left: 0;
+      flex-direction: row;
+      align-items: center;
+      list-style-type: none;
+
     }
 
-    .menu.active li {}
+    .menu li a {
+      margin: 30px;
+      justify-content: right;
+      text-decoration: none;
+      color: white;
+      margin: 16px;
+      padding: 16px;
+      background-color: #CD1F35;
+    }
 
     .logo {
       width: 128px;
       margin: 0px;
+
     }
 
     .top-bar ul li a:hover {
       background-color: #F2C9CB;
       color: black;
       border-radius: 8px;
-    }
 
-    .hamburger {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      cursor: pointer;
-      width: 24px;
-    }
-
-    .hamburger span {
-      height: 4px;
-      background-color: white;
     }
 
 
     .container {
-      width: 100%;
+      padding-block: 32px;
       padding-inline: 16px;
     }
 
     section {
       display: flex;
       justify-content: center;
-      padding-block: 32px;
     }
 
     h2 {
@@ -112,13 +79,14 @@
     }
 
     .hero {
-      height: 100svh;
+      height: 100vh;
       background: url("") center/cover no-repeat;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+      padding: 20px;
     }
 
     .hero::before {
@@ -136,7 +104,7 @@
     }
 
     .hero h1 {
-      font-size: 56px;
+      font-size: 64px;
       line-height: 1.1;
       text-transform: uppercase;
       margin-bottom: 8px;
@@ -167,10 +135,12 @@
     }
 
     .education {
-      background: #cb142a;
+      background: #CD1F35;
       color: #F5F5F5;
+      padding: 60px 20px;
       text-align: center;
       display: flex;
+      flex-direction: column;
     }
 
     .education h2 {
@@ -188,7 +158,7 @@
 
     .education-btn {
       font-size: 16px;
-      color: #cb142a;
+      color: #CD1F35;
       font-weight: bolder;
     }
 
@@ -203,7 +173,6 @@
       gap: 15px;
       max-width: 320px;
       margin: 0 auto;
-      align-items: center;
     }
 
     details {
@@ -211,7 +180,7 @@
       color: #393D3F;
       border-radius: 6px;
       overflow: hidden;
-      width: 320px;
+      width: 600px;
     }
 
     summary {
@@ -231,6 +200,7 @@
       transform: translateY(-50%);
       font-size: 24px;
     }
+
 
     details[open] summary::after {
       content: "−";
@@ -257,7 +227,7 @@
 
     .slideshow-card {
       width: 275px;
-      min-height: 510px;
+      min-height: 350px;
       padding: 20px;
       background: white;
       border-radius: 20px;
@@ -272,6 +242,8 @@
       background: #f5f5f5;
       text-align: center;
       display: flex;
+      flex-direction: column;
+      padding: 60px 20px;
     }
 
     .dream-job h2 {
@@ -289,7 +261,7 @@
       display: flex;
       align-content: center;
       justify-content: center;
-      gap: 4px;
+      gap: 20px;
     }
 
     .slideshow-card h3 {
@@ -366,7 +338,6 @@
       gap: 15px;
       max-width: 320px;
       margin: 0 auto;
-      align-items: center;
     }
 
     .requirements-content {
@@ -387,6 +358,7 @@
 
     .student-projects {
       display: flex;
+      flex-direction: column;
       margin: 0 auto;
       background-color: #f5f5f5;
       align-items: center;
@@ -406,6 +378,8 @@
     }
 
     .video {
+      display: flex;
+      flex-direction: row;
       width: 275px;
       height: auto;
       aspect-ratio: 16/9;
@@ -448,6 +422,7 @@
 
     .journey {
       display: flex;
+      flex-direction: column;
       margin: 0 auto;
       background-color: #f5f5f5;
       align-items: center;
@@ -498,11 +473,8 @@
       }
 
       .container {
-        padding-inline: 96px;
-      }
-
-      section {
         padding-block: 64px;
+        padding-inline: 96px;
       }
 
       .hero h1 {
@@ -520,7 +492,7 @@
 
       .dropdown-container,
       .requirements-container {
-        width: 600px;
+        max-width: 600px;
       }
 
       .slideshow-card {
@@ -554,6 +526,7 @@
 
       .container {
         max-width: 1920px;
+        padding-block: 64px;
         padding-inline: 256px;
       }
 
@@ -561,42 +534,4 @@
         width: 320px;
       }
 
-      section {
-        padding-block: 64px;
-      }
-
-      .menu {
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-      }
-
-      .menu li a {
-        margin: 30px;
-        justify-content: right;
-        text-decoration: none;
-        color: white;
-        margin: 16px;
-        padding: 16px;
-        background-color: #cb142a;
-      }
-
-      .hamburger {
-        display: none;
-      }
-
-      #topBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 999;
-        border: none;
-        background: #000;
-        color: #fff;
-        padding: 14px 18px;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 12px;
-      }
     }
