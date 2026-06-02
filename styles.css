@@ -5,67 +5,99 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-
     @font-face {
       font-family: Nasalization;
-      src: url("C:\Users\jimmy\Documents\GitHub\Daniagames\Font") format("truetype");
+      src: url("Font/Nasalization.ttf") format("truetype");
     }
-
 
     body {
       background: #ffffff;
       color: #222;
     }
 
-.top-bar {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	background-color: #CD1F35;
-	height: 128px;
-	padding: 0px;
-}
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      border: none;
+      background: #000;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 12px;
+    }
 
-.menu {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	list-style-type: none;
-	
-}
+    #topBtn:hover {
+      background: #333;
+    }
 
-.menu li a {
-	margin:30px;
-	justify-content: right;
-	text-decoration: none;
-	color: white;
-	margin: 16px;
-	padding: 16px;
-	background-color: #CD1F35;
-}
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #cb142a;
+      height: 128px;
+      overflow: hidden;
+    }
 
-.logo {
-	width: 128px;
-	margin: 0px;
-	
-}
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.top-bar ul li a:hover {
-	background-color: #F2C9CB;
-	color: black;
-	border-radius: 8px;
-	
-}
+    .menu {
+      display: none;
+    }
+
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+      width: 100svw;
+      position: absolute;
+      top: 128px;
+      background-color: white;
+      left: 0;
+    }
+
+    .menu.active li {}
+
+    .logo {
+      width: 128px;
+      margin: 0px;
+    }
+
+    .top-bar ul li a:hover {
+      background-color: #F2C9CB;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      width: 24px;
+    }
+
+    .hamburger span {
+      height: 4px;
+      background-color: white;
+    }
 
     .container {
-      padding-block: 32px;
+      width: 100%;
       padding-inline: 16px;
     }
 
     section {
       display: flex;
       justify-content: center;
+      padding-block: 32px;
     }
 
     h2 {
@@ -79,14 +111,13 @@
     }
 
     .hero {
-      height: 100vh;
+      height: 100svh;
       background: url("") center/cover no-repeat;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
     }
 
     .hero::before {
@@ -100,18 +131,11 @@
       position: relative;
       z-index: 2;
       color: white;
-<<<<<<< HEAD
       max-width: 1440px;
-=======
-<<<<<<< HEAD
-=======
-      max-width: 1440px;
->>>>>>> Victor-Branch
->>>>>>> origin/Tobias
     }
 
     .hero h1 {
-      font-size: 64px;
+      font-size: 56px;
       line-height: 1.1;
       text-transform: uppercase;
       margin-bottom: 8px;
@@ -142,12 +166,10 @@
     }
 
     .education {
-      background: #CD1F35;
+      background: #cb142a;
       color: #F5F5F5;
-      padding: 60px 20px;
       text-align: center;
       display: flex;
-      flex-direction: column;
     }
 
     .education h2 {
@@ -165,7 +187,7 @@
 
     .education-btn {
       font-size: 16px;
-      color: #CD1F35;
+      color: #cb142a;
       font-weight: bolder;
     }
 
@@ -180,6 +202,7 @@
       gap: 15px;
       max-width: 320px;
       margin: 0 auto;
+      align-items: center;
     }
 
     details {
@@ -187,7 +210,7 @@
       color: #393D3F;
       border-radius: 6px;
       overflow: hidden;
-      width: 600px;
+      width: 320px;
     }
 
     summary {
@@ -207,7 +230,6 @@
       transform: translateY(-50%);
       font-size: 24px;
     }
-
 
     details[open] summary::after {
       content: "−";
@@ -234,7 +256,7 @@
 
     .slideshow-card {
       width: 275px;
-      min-height: 350px;
+      min-height: 510px;
       padding: 20px;
       background: white;
       border-radius: 20px;
@@ -249,8 +271,6 @@
       background: #f5f5f5;
       text-align: center;
       display: flex;
-      flex-direction: column;
-      padding: 60px 20px;
     }
 
     .dream-job h2 {
@@ -268,7 +288,7 @@
       display: flex;
       align-content: center;
       justify-content: center;
-      gap: 20px;
+      gap: 4px;
     }
 
     .slideshow-card h3 {
@@ -278,8 +298,7 @@
       font-weight: bold;
     }
 
-    .slideshow-txt 
-    {
+    .slideshow-txt {
       text-align: left;
     }
 
@@ -316,7 +335,7 @@
 
     .requirements {
       background: #f5f5f5;
-      color: #393D3F
+      color: #393D3F;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -330,8 +349,7 @@
       font-family: Nasalization;
     }
 
-    .requirements h4 
-    {
+    .requirements h4 {
       font-size: 20px;
     }
 
@@ -347,6 +365,7 @@
       gap: 15px;
       max-width: 320px;
       margin: 0 auto;
+      align-items: center;
     }
 
     .requirements-content {
@@ -367,7 +386,6 @@
 
     .student-projects {
       display: flex;
-      flex-direction: column;
       margin: 0 auto;
       background-color: #f5f5f5;
       align-items: center;
@@ -387,8 +405,6 @@
     }
 
     .video {
-      display: flex;
-      flex-direction: row;
       width: 275px;
       height: auto;
       aspect-ratio: 16/9;
@@ -431,7 +447,6 @@
 
     .journey {
       display: flex;
-      flex-direction: column;
       margin: 0 auto;
       background-color: #f5f5f5;
       align-items: center;
@@ -474,9 +489,19 @@
     /* Desktop/tablet styling */
     @media(min-width:768px) {
 
+      .top-bar {
+        position: sticky;
+        z-index: 1000;
+        max-width: 100%;
+        top: 0;
+      }
+
       .container {
-        padding-block: 64px;
         padding-inline: 96px;
+      }
+
+      section {
+        padding-block: 64px;
       }
 
       .hero h1 {
@@ -494,7 +519,7 @@
 
       .dropdown-container,
       .requirements-container {
-        max-width: 600px;
+        width: 600px;
       }
 
       .slideshow-card {
@@ -528,7 +553,6 @@
 
       .container {
         max-width: 1920px;
-        padding-block: 64px;
         padding-inline: 256px;
       }
 
@@ -536,4 +560,42 @@
         width: 320px;
       }
 
+      section {
+        padding-block: 64px;
+      }
+
+      .menu {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+      }
+
+      .menu li a {
+        margin: 30px;
+        justify-content: right;
+        text-decoration: none;
+        color: white;
+        margin: 16px;
+        padding: 16px;
+        background-color: #cb142a;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        border: none;
+        background: #000;
+        color: #fff;
+        padding: 14px 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 12px;
+      }
     }
