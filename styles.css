@@ -587,6 +587,11 @@
       .video {
         width: 1080px;
       }
+
+      .video2 {
+        width: 1080px;
+        height: 607.5px;
+      }
     }
 
     @media(min-width:1280px) {
