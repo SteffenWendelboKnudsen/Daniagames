@@ -558,10 +558,11 @@
         flex-direction: column;
         width: 100%;
         gap: 64px;
+        align-items: center;
       }
 
       .video {
-        width: 100%;
+        width: 1080px;
       }
     }
 
