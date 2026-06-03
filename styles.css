@@ -63,7 +63,10 @@
       left: 0;
     }
 
-    .menu.active li {}
+    .menu.active li {
+      size: 8px;
+      width: 100%;
+    }
 
     .logo {
       width: 128px;
@@ -522,6 +525,17 @@
       .dropdown-container,
       .requirements-container {
         width: 600px;
+        max-width: none;
+      }
+
+      .dropdown-container details {
+        width: 500px;
+        max-width: none;
+      }
+
+      .requirements-container details {
+        width: 500px;
+        max-width: none;
       }
 
       .slideshow-card {
