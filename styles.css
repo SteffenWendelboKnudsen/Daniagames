@@ -10,6 +10,10 @@
       src: url("Font/Nasalization.ttf") format("truetype");
     }
 
+html {
+	scroll-behavior: smooth;
+}
+
     body {
       background: #ffffff;
       color: #222;
@@ -513,6 +517,69 @@
       transition: 0.3s;
       margin: 0 auto;
     }
+
+.scroller {
+	
+}
+
+.scroller_inner img {
+	height: 128px;
+}
+
+
+.scroller_inner {
+	padding-block: 1rem;
+	desplay: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.scroller[data-animated="true"] {
+	overflow: hidden;
+	webkit-mask: linear-gradient(
+	90deg,
+	transparent,
+	white 20%,
+	white 80%,
+	transparent
+	);
+	mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] {
+	overflow: hidden;
+}
+
+.scroller[data-animated="true"] .scroller_inner {
+	width: max-content;
+	flex-wrap: nowrap;
+	animation: scroll var(--_animation-duration, 80s)
+		var(--_animation-direction,	forwards) linear
+		infinite;
+}
+
+.scroller[data-direction="right"] {
+	--_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+	--_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+	--_animation-speed:40s;
+}
+
+.scroller[data-speed="slow"] {
+	--_animation-speed:100s;
+}
+
+@keyframes scroll {
+	to {
+		transform: translate(calc(-50% - 0.5rem));
+	}
+}
+
 
     /* Desktop/tablet styling */
     @media(min-width:768px) {
