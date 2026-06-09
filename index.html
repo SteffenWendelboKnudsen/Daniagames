@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="slideshow.js"></script>
   <script src="hamburger-menu.js" defer></script>
   <script src="top-btn.js" defer></script>
-  <title>Dania Games</title>
+  <title>Dania Games | Uddannelser inden for spil IT og design</title>
+  <meta name="description"
+    content=" Hos Dania Games har du mulighed for at dykke ned i en verden af Spil, IT og digitalt design. Udforsk datamatiker, multimediedesigner og softwareudvikling og være med til at skabe fremtidens digitale oplevelser ">
+	<link rel="icon" type="image/x-icon" href="imgs/Daniagamesicon.ico">
 </head>
 
 <body>
@@ -23,29 +26,34 @@
         <span></span>
       </div>
       <ul class="menu" id="menu">
-        <li><a class="OpenPage" href="index.html">Uddannelse</a></li>
-        <li><a href="Jobmuligheder.html">Jobmuligheder</a></li>
-        <li><a href="Optagelse.html">Optagelse</a></li>
-        <li><a href="Studenterprojekter.html">Studenterprojekter</a></li>
-        <li><a href="Studiemiljø.html">Studiemiljø</a></li>
-        <li><a href="Kontakt.html">Kontakt</a></li>
+        <li><a class="OpenPage" href="#uddannelser">Uddannelse</a></li>
+        <li><a href="#drømmejob">Jobmuligheder</a></li>
+        <li><a href="#optagelse">Optagelse</a></li>
+        <li><a href="#studenterprojekter">Studenterprojekter</a></li>
+        <li><a href="#studiemiljø">Studiemiljø</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>En verden af spil og kreativitet</h1>
+      <div class="video-wrapper">
+        <video playsinline autoplay muted loop poster="cake.jpg" class="background-wrapper">
+          <source src="vids/Dania Games Banner.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+          <div class="hero-content">
+            <h1>En verden af spil og kreativitet</h1>
 
-          <p>
-            Dania Games samler uddannelserne bag fremtidens spil og digitale løsninger
-          </p>
+            <p>
+              Dania Games samler uddannelserne bag fremtidens spil og digitale løsninger
+            </p>
 
-          <a href="#uddannelser" class="hero-btn">
-            Find din retning
-          </a>
+            <a href="#uddannelser" class="hero-btn">
+              Find din retning
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -92,9 +100,7 @@
 
           <details>
             <summary>Multimediedesigner</summary>
-
             <div class="dropdown-content">
-
               <p>
                 Drømmer du om at arbejde professionelt med design-processer samt udvikle og kode digitale
                 brugeroplevelser?
@@ -121,15 +127,12 @@
 
           <details>
             <summary>Software-udvikling</summary>
-
             <div class="dropdown-content">
-
               <p>
                 Uddannelsen som professionsbachelor i softwareudvikling er for datamatikere, der ønsker at blive endnu
                 bedre
                 klædt på til erhvervslivet med en avanceret teoretisk og praksisbaseret overbygning.
               </p>
-
               <p>
                 Softwareudvikler-uddannelsen er en kombination af praktisk og teoretisk viden. De første 2 semestre af
                 uddannelsen finder sted på erhvervsakademiet, hvor du bliver undervist på hold i både teoretiske og
@@ -148,7 +151,7 @@
       </div>
     </section>
 
-    <section class="dream-job">
+    <section class="dream-job" id="drømmejob">
       <div class="container">
         <h2>Jobmuligheder</h2>
         <p>Dit drømmejob starter med det, du er nysgerrig på i dag. Se hvilke muligheder uddannelserne på Dania Games
@@ -164,7 +167,6 @@
             <p class="slideshow-txt">Du har allerede gaming-skills. Nu er det tid til at levele op mod en fremtid som
               developer, hvor du kan arbejde med software, systemudvikling og digitale løsninger. </p>
             <p class="slideshow-bold">Du kan blive:</p>
-
             <ul>
               <li>Spiludvikler</li>
               <li>Softwareudvikler</li>
@@ -180,7 +182,6 @@
             <p class="slideshow-txt">Med multimediedesigneruddannelsen får du kompetencerne til at arbejde med digitalt
               design, brugeroplevelser, visuel kommunikation, interaktive løsninger og meget mere.</p>
             <p class="slideshow-bold">Du kan blive:</p>
-
             <ul>
               <li>Webdesigner</li>
               <li>Spildesigner</li>
@@ -198,7 +199,6 @@
             <p class="slideshow-txt">Med en professionsbachelor i softwareudvikling kan du bygge videre på dine
               IT-færdigheder og åbne døren til jobs i forskellige digitale brancher</p>
             <p class="slideshow-bold">Du kan blive:</p>
-
             <ul>
               <li>Systemudvikler</li>
               <li>Tester</li>
@@ -212,7 +212,7 @@
       </div>
     </section>
 
-    <section class="requirements">
+    <section class="requirements" id="optagelse">
       <div class="container">
         <h2>Optagelse</h2>
         <br>
@@ -234,8 +234,8 @@
                 du
                 er færdig med fx din adgangsgivende eksamen eller supplerende fag.
               </p>
-              <p>Læs mere om adgangskrav til multimediedesigner</p>
-              <p>Læs mere om adgangskrav til datamatiker</p>
+              <a href="https://eadania.dk/uddannelser/" target="_blank" class="requirements-btn"> Læs
+                mere om adgangskrav til datamatiker og multimediedesigner</a>
 
               <h4>Software-udvikling</h4>
               <p> For at blive optaget skal du have en adgangsgivende erhvervsakademiuddannelse. Du kan muligvis blive
@@ -243,9 +243,9 @@
                 at
                 du
                 har faglige kvalifikationer, som kan sidestilles med de formelle krav.</p>
-              <p>Læs mere om adgangskrav til software-udvikling</p>
+              <a href="https://eadania.dk/uddannelser/softwareudvikling/" target="_blank" class="requirements-btn"> Læs
+                mere om adgangskrav til software-udvikling</a>
             </div>
-            =======
             <div class="requirements-content">
               <h4>Datamatiker</h4>
 
@@ -328,7 +328,7 @@
       </div>
     </section>
 
-    <section class="student-projects">
+    <section class="student-projects" id="studenterprojekter">
       <div class="container">
         <h2>Studenter<br>projekter</h2>
         <h3>Fra idé til virkelighed</h3>
@@ -339,17 +339,15 @@
           en del af din faglige udvikling.</p>
         <br>
 
-        <div class="student-slideshow-container">
+        <div class="student-slideshow-container" alt="erhvervsakademi spil">
           <button class="button button-left">⬅</button>
-          <iframe width="275" height="155" src="https://www.youtube.com/embed/9QbQYWTiJIA?si=XbamHIe-sba-tRCA"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="slideshow-item video"></iframe>
 
-          <video width="250" height="200" controls class="slideshow-item video"> /* mangler video på computeren,
-            indsættes når
-            jeg har \*
-            <source src="" type="">
+          <video width="250" height="200" controls class="slideshow-item video">
+            <source src="vids/Godstone Trailer.mp4" type="video/mp4">
+          </video>
+
+          <video width="250" height="200" controls class="slideshow-item video">
+            <source src="vids/Fixpert Trailer.mp4" type="video/mp4">
           </video>
 
           <button class="button button-right">➡</button>
@@ -358,24 +356,23 @@
       </div>
     </section>
 
-    <section class="study-environment">
+    <section class="study-environment" id="studiemiljø" alt="miljø">
       <div class="container">
         <h2>Studiemiljø</h2>
-        <h3>Et fællesskab der deler din passion</h3>
+        <h3 style="color: white">Et fællesskab der deler din passion</h3>
         <br>
-        <p>Dania Games tilbyder et studiemiljø med plads til kreativitet, samarbejde og fælles interesse inden for spil,
-          design og teknologi. Her kan du samarbejde med andre og udvikle dig fagligt i et miljø hvor fællesskab og
-          projekter går hånd i hånd</p>
+        <p style="color: white">Dania Games tilbyder et studiemiljø med plads til kreativitet og samarbejde. Her møder du et miljø, hvor man
+          i fællesskab udvikler sine faglige og sociale kompetencer.</p>
 
-        <div class="video2">
-          <video width="275" height="155" controls> /* mangler video på computeren, indsættes når jeg har \*
-            <source src="" type="">
+        <div class="video2" alt="skolen">
+          <video width="100%" minwidth="250" minheight="200" controls>
+            <source src="vids/dania promo.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </section>
 
-    <section class="journey">
+    <section class="journey" id="kontakt" alt="Dania uddannelser">
       <div class="container">
         <h2>Start din<br> rejse nu</h2>
         <br>
@@ -384,50 +381,36 @@
           med
           software eller digitale løsninger, kan Dania Games være starten på din rejse</p>
         <div class="journey-content">
-          <a href="https://eadania.dk/uddannelser/" target="_blank" class="journey-btn"> Ansøg nu</a>
-          <a href="https://eadania.dk/her-ligger-vi/grenaa/#sec_6" target="_blank" class="journey-btn"> Kontakt</a>
-        </div>
-        <div>
-
+          <a href="https://eadania.dk/uddannelser/" target="_blank" class="journey-btn">Ansøg nu</a>
+          <a href="https://eadania.dk/her-ligger-vi/grenaa/#sec_6" target="_blank" class="journey-btn">Kontakt</a>
         </div>
       </div>
     </section>
-	<section class="footer">
-		<div class="container">
-			<div class="some">
-			<a href="https://www.facebook.com/Daniagames" title="Følg på Facebook" target="_blank">
-			 <img class="logo" src="imgs/square-facebook-brands-solid.png" alt="Facebook">
-			</a>
-				
-			<a href="https://www.instagram.com/daniagamesgrenaa/" title="Følg på Instagram" target="_blank">
-				<img class="logo" src="imgs/square-instagram-brands-solid.png" alt="instagram">
-			</a>
-			<a href="https://www.linkedin.com/school/erhvervsakademi-dania/" title="Følg på LinkedIn" target="_blank">
-				<img class="logo" src="imgs/linkedin-brands-solid.png" alt="LinkedIn">
-				</a>
-			
-			</div>
-			<div class="konktakt os">
-				<h4>Konktakt os</h4>
-				<p>
-					<strong>Adresse</strong>:
-					<a href="https://maps.app.goo.gl/s2pykmqTsiyP87nMA">N.P. Jossiassens Vej 44a </a>
-					<br>
-					<strong>Mail</strong>:
-					<a href="mailto:grenaa@eadania.dk" br>grenaa@eadania</a>
-					<br>
-					<strong>Tlf</strong>:
-					<a href="tel:72291700">72 29 17 00</a>
-				
-				</p>
-			
-			
-			</div>
-			
-			
-		
-		</div>
-	</section>
+    <section class="footer">
+      <div class="container">
+        <div class="some">
+          <a href="https://www.facebook.com/Daniagames" title="Følg på Facebook" target="_blank">
+            <img class="logo" src="imgs/square-facebook-brands-solid.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/daniagamesgrenaa/" title="Følg på Instagram" target="_blank">
+            <img class="logo" src="imgs/square-instagram-brands-solid.png" alt="instagram"></a>
+          <a href="https://www.linkedin.com/school/erhvervsakademi-dania/" title="Følg på LinkedIn" target="_blank">
+            <img class="logo" src="imgs/linkedin-brands-solid.png" alt="LinkedIn"></a>
+        </div>
+        <div class="konktakt-os">
+          <h4>Konktakt os</h4>
+          <p>
+            <strong>Adresse</strong>:
+            <a href="https://maps.app.goo.gl/s2pykmqTsiyP87nMA">N.P. Jossiassens Vej 44a </a>
+            <br>
+            <strong>Mail</strong>:
+            <a href="mailto:grenaa@eadania.dk" br>grenaa@eadania</a>
+            <br>
+            <strong>Tlf</strong>:
+            <a href="tel:72291700">72 29 17 00</a>
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
   <button id="topBtn" title="Til toppen">↑</button>
   <script>
@@ -435,5 +418,4 @@
     new SlideShow(".student-slideshow-container")
   </script>
 </body>
-
 </html>
