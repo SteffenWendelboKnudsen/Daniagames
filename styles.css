@@ -105,6 +105,7 @@ html {
       display: flex;
       justify-content: center;
       padding-block: 32px;
+	  scroll-margin-top: 128px;
     }
 
     h2 {
@@ -534,21 +535,7 @@ html {
 	gap: 16px;
 }
 
-.scroller[data-animated="true"] {
-	overflow: hidden;
-	webkit-mask: linear-gradient(
-	90deg,
-	transparent,
-	white 20%,
-	white 80%,
-	transparent
-	);
-	mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
 
-.scroller[data-animated="true"] {
-	overflow: hidden;
-}
 
 .scroller[data-animated="true"] .scroller_inner {
 	width: max-content;
