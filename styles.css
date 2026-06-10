@@ -559,19 +559,19 @@ html {
 }
 
 .scroller[data-direction="right"] {
-	--_animation-direction: reverse;
+	_animation-direction: reverse;
 }
 
 .scroller[data-direction="left"] {
-	--_animation-direction: forwards;
+	_animation-direction: forwards;
 }
 
 .scroller[data-speed="fast"] {
-	--_animation-speed:40s;
+	_animation-speed:40s;
 }
 
 .scroller[data-speed="slow"] {
-	--_animation-speed:100s;
+	_animation-speed:100s;
 }
 
 @keyframes scroll {
